@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Canteen</title>
+</head>
+<body>
+    <h2>Welcome to My Canteen! Here are the prices:</h2>
+    <ul>
+        <li><b>Kare-Kare</b> - 150 PHP</li>
+        <li><b>Sinigang</b> - 140 PHP</li>
+        <li><b>Adobo</b> - 160 PHP</li>
+    </ul>
+
+    <form action="balinado2.php" method="POST">
+        Choose your order:
+        <select name="foodSelectField">
+            <option value="Kare-Kare">Kare-Kare</option>
+            <option value="Sinigang">Sinigang</option>
+            <option value="Adobo">Adobo</option>
+        </select> <br><br>
+        Quantity: <input type="number" name="quantityTextField" min="1"> <br><br>
+        Cash: <input type="number" name="cashTextField" min="0" step="0.01"> <br><br>
+        <input type="submit" value="ORDER!">
+    </form>
+</body>
+</html>
